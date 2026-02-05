@@ -36,6 +36,7 @@ jobs:
         run: |
           cd dist
           sed -i 's|/_expo/|/FitRoutine/_expo/|g' index.html
+          sed -i 's|overflow: hidden;|overflow: auto;|g' index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
