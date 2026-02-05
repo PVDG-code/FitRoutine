@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build web app
-        run: npx expo export --platform web
+        run: npx expo export --platform web --public-url /FitRoutine
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
