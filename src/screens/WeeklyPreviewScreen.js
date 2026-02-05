@@ -203,11 +203,13 @@ const WeeklyPreviewScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5'
+    backgroundColor: '#f5f5f5',
+    height: '100%'
   },
   scrollContent: {
     padding: 20,
-    paddingBottom: 40
+    paddingBottom: 40,
+    flexGrow: 1
   },
   loadingContainer: {
     flex: 1,
