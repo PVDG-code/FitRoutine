@@ -30,7 +30,12 @@ jobs:
         run: npm install
 
       - name: Build web app
-        run: npx expo export --platform web --public-url /FitRoutine
+        run: npx expo export --platform web
+
+      - name: Fix paths for GitHub Pages
+        run: |
+          cd dist
+          sed -i 's|/_expo/|/FitRoutine/_expo/|g' index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
